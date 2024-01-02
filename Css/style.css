@@ -1,0 +1,105 @@
+body {
+  background-color: #f7ecde;
+  text-decoration: none;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Pacifico";
+  color: #352e28;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+h1:hover::after {
+  height: 60%;
+}
+
+hr {
+  border-top: dotted black;
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 25px;
+  background-clip: text;
+  color: transparent;
+
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.dotedline::before {
+  content: "";
+  position: absolute;
+  width: 67%;
+  height: 3px;
+  border-top: 3px dotted black;
+  left: 16%;
+  top: 15%;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+button {
+  background-color: #d1512d !important;
+  color: white !important;
+}
+button:hover {
+  background-color: #bb4120 !important;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 67%;
+  height: 2px;
+  border-top: 3px dotted black;
+  left: 16%;
+  bottom: 53%;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main .child-1 {
+  background-color: red;
+}
+
+.main .child-2 {
+  background-color: rgb(255, 187, 0);
+}
+
+.main .child-3 {
+  background-color: green;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.527);
+}
